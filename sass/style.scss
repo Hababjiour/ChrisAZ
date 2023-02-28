@@ -1,0 +1,27 @@
+/*!
+Theme name: Theme ChrisAZ
+Version: 0.1
+Author: ChrisAZ
+Description: Le thème créer pour mon site web 2.0
+*/
+
+
+
+@import 'parts/reset';
+@import 'parts/variables';
+@import 'parts/font';
+@import 'parts/general';
+
+
+@import 'parts/surmenu';
+@import 'parts/menu';
+@import 'parts/button';
+@import 'parts/footer';
+
+@import 'parts/svg_frontpage';
+@import 'parts/page';
+@import 'parts/templates';
+@import 'parts/svgTemplates';
+
+@import 'parts/404';
+

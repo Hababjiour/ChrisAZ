@@ -1,0 +1,17 @@
+$backcolor1:white;
+$backcolor1Darken:darken($backcolor1, 6%);
+
+$backcolor2:black;
+$backcolor2lighter:lighten($backcolor2, 42%);
+$backcolor2lighter2:lighten($backcolor2, 62%);
+
+$mygreen:#3cc319;
+$mygreenlighter: lighten($mygreen, 10%);
+$mygreenlighterx2: lighten($mygreen, 20%);
+$mygreenOpacity: rgba(60, 195, 25, 0.8);
+
+$odd:#F3F1F1;
+$odddarken: darken($odd, 12%);
+$odddarken2:darken($odd, 26%);
+
+$linkcolor: black;

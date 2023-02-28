@@ -1,0 +1,122 @@
+//Page d'acceuil
+.frontpageAccueil {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-bottom: 10px;
+    background-color: $backcolor2;
+
+    @media screen and (min-width:1000px) {
+        height: calc(100vh - 80px - 30px);
+    }
+
+}
+
+.frontpageTitre {
+    color: $backcolor1;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Kalam';
+    letter-spacing: 0.8px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    font-size: 1rem;
+
+    @media screen and (min-width:1400px) {
+        padding-top: 120px;
+        font-size: 1.4rem;
+    }
+}
+
+.frontpageTitre h2{
+    margin-top: 8px;
+}
+
+.frontpageLastTitle {
+    margin-bottom: 30px;
+}
+
+.mygreen {
+    color: $mygreen;
+}
+
+//Le conteneur du SVG principal
+.frontpageContainerSvg {
+    position: absolute;
+    width: 350px;
+    bottom: -32px;
+    left: -55px;
+    padding: 20px;
+    z-index: 0;
+
+    @media screen and (max-height:675px) and (max-width:700px) {
+        display: none;
+    }
+
+    @media screen and (min-height:676px) and (min-width:750px) {
+        width: 450px;
+        bottom: -32px;
+        left: -70px;
+    }
+
+    @media screen and (min-height:676px) and (min-width:1500px) {
+        width: 550px;
+        bottom: -34px;
+        left: -84px;
+    }
+
+    @media screen and (min-height:820px) and (max-width:749px) {
+        width: 460px;
+        bottom: -33px;
+        left: -84px;
+    }
+
+}
+
+//Le SVG
+.cls-1,
+.cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+}
+
+.cls-1 {
+        stroke: #26cb0b;
+}
+.cls-2,
+.cls-5,
+.cls-6,
+.cls-7 {
+        fill: #26cb0b;
+}
+
+.cls-web{
+    fill: url(#Dégradé_sans_nom_4);
+}
+
+.cls-3 {
+        fill: #fff;
+}
+
+.cls-4 {
+        stroke: #fff;
+}
+
+.cls-5 {
+        font-size: 14px;
+        font-family: NotoSans-Regular, Noto Sans;
+}
+
+.cls-6 {
+        opacity: 0.4;
+}
+
+.cls-7 {
+        opacity: 0.49;
+}
+
+.engrenage {
+    transform-origin: center;
+    transform-box: fill-box;
+}

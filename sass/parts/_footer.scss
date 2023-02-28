@@ -1,0 +1,137 @@
+//CSS general du footer
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: $backcolor2;
+    @media screen and (min-width:800px) and (max-width:999px) {
+        height: 350px;
+    }
+    @media screen and (min-width:1000px) {
+        height: 350px;
+    }
+}
+
+footer div.footerMaxWidth{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    @media screen and (min-width:800px) {
+        font-size: 1rem;
+    }
+}
+
+//Logo et nom du site
+.divFooterLogo{
+    display: flex;
+    align-items: center;
+}
+
+.divFooterLogo img{
+    width: 50px;
+    height:50px ;
+}
+
+.divFooterLogo h3{
+    font-family: 'Kalam-light';
+    margin-left: 16px;
+    font-size: 2.2rem;
+    color: $backcolor1;
+    font-weight: normal;
+}
+
+//Div de contact 
+div.svgContact{
+    flex-direction: column;
+}
+
+div.svgContact a{
+    display: flex;
+    color: $backcolor1;
+    @media screen and (min-width:800px) {
+        width: 30%;
+    }
+}
+
+div.svgContact a div{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+div.svgContact h5{
+    display: flex;
+    align-items: center;
+}
+
+//L'objet
+.cls-footer{
+    fill: $backcolor1;
+}
+
+.cls-footerhover{
+    fill:$mygreen;
+}
+
+
+//Plan de site
+div.planDeSite{
+    flex-direction: column;
+    @media screen and (min-width:800px) {
+        text-align: right;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+
+    }
+}
+
+div.planDeSite h4{
+    color: $backcolor1;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+div.planDeSite li{
+    margin-bottom: 4px ;
+}
+
+div.planDeSite li:hover{
+    cursor: pointer;
+}
+
+div.planDeSite li a:hover{
+    transition: all .2s ease-out;
+    color: $mygreen;
+
+}
+
+div.planDeSite ul a{
+    font-family: 'Montserrat';
+    color: white;
+    transition: all .2s ease-out;
+
+}
+
+#menu-item-44 a{
+    color: $mygreen!important;
+    letter-spacing: 1px;
+}
+
+#menu-item-44 a:hover{
+    font-size: 1.2rem;
+}
+
+.signature{
+    color: $backcolor1;
+    @media screen and (min-width:800px) {
+        margin-top: 50px;
+        text-align: center;
+    }
+}

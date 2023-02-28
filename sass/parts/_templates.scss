@@ -1,0 +1,49 @@
+.templateHeader{
+    position: relative;
+    background-color: $backcolor2;
+    height: 400px;
+    margin-bottom: 10px;
+    height: calc(90vh - 80px - 30px);
+    max-height: 800px;
+}
+
+.templateHeader .frontpageTitre h2{
+    color: $mygreen;
+}
+
+//template Contact
+//Liens de contact
+.linkContainer{
+    width: 100%;
+}
+
+.linkContainer a{
+    font-family: 'Montserrat';
+    color: $backcolor2;
+}
+
+//Le formulaire
+.wpforms-submit-container{
+    text-align: center;
+}
+
+.formContact button{
+    border-radius: 999px!important;
+    background-color: $mygreen!important;
+    margin-top: 20px!important;
+    padding: 10px 30px!important;
+    font-family: 'Kalam-bold'!important;
+    border: none!important;
+    color: black!important;
+    transition: all ease-in 0.6s!important;
+    align-self: center!important;
+    font-size: 1rem!important;
+}
+
+.formContact button:hover{
+    background-color: $mygreenlighter;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    box-shadow:0 0 8px $backcolor2, 0 0 30px $mygreenlighterx2;
+}
+

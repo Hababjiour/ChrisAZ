@@ -1,0 +1,209 @@
+#hamburger,
+#hamburger-content {
+    background-color: $backcolor2;
+    height: 80px;
+}
+
+div.maxWidth {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+}
+
+@media screen and (min-width:1000px) {
+
+    #hamburger-content,
+    #hamburger nav,
+    #hamburger nav ul,
+    #hamburger nav ul li {
+        width: 100%;
+    }
+    
+    #hamburger nav {
+        height: 100%;
+    }
+
+    #hamburger nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 2px;
+    }
+}
+
+
+#hamburger ul li {
+    display: none;
+
+    @media screen and (min-width:1000px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        max-width: 150px;
+        height: 100%;
+        font-family: 'Kalam';
+    }
+    
+    @media screen and (min-width:1200px) {
+        max-width: 170px;
+    }
+}
+
+#hamburger ul li a {
+    @media screen and (min-width:1000px) {
+        color: $backcolor1;
+        font-size: 1rem;
+        transition: all 0.3s ease-out;
+        padding-right: 20px;
+
+        &:hover {
+            color: $mygreen;
+        }
+    }
+}
+
+#hamburger-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 0;
+    padding-right: 24px;
+    color: $mygreen;
+    font-family: 'Kalam';
+
+    @media screen and (min-width:1000px) {
+        display: none;
+    }
+}
+
+.hamburgerText {
+    color: $backcolor1;
+    font-family: 'Kalam';
+    padding-right: 8px;
+}
+
+#hamburger-overlay {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hamburger-activated #hamburger-overlay {
+    display: block;
+}
+
+#hamburger-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 84%;
+    max-width: 400px;
+    z-index: 20;
+    height: 85%;
+    top: 0;
+    left: 0;
+    background-color: $backcolor2;
+    transform: translateX(-100%);
+    transition: transform .2s ease-out;
+    font-size: 1.5rem;
+
+    @media screen and (max-height:550px) {
+        height: 100%;
+    }
+
+    @media screen and (min-width:1000px) {
+        display: none;
+    }
+}
+
+.hamburger-activated #hamburger-sidebar {
+    transform: translateX(0);
+}
+
+#hamburger-sidebar-header {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+}
+
+#hamburger-sidebar-body{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 26px;
+}
+
+#hamburger-sidebar-body nav{
+    height: 100%;
+}
+
+#hamburger-sidebar ul {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+#hamburger-sidebar ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 26px;
+}
+
+#hamburger-sidebar ul li a{
+    height: 100%;
+    width: 100%;
+    min-width: 48px;
+    font-family: 'Kalam';
+    color: $backcolor1;
+    display: flex;
+    align-items: center;
+}
+
+#hamburger-sidebar ul li:hover {
+    background-color: $mygreen;
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+#hamburger-sidebar ul li a:hover {
+    color: white;
+}
+
+
+/*Le logo*/
+.div_logo_chrisaz {
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    flex-grow: 1;
+
+    @media screen and (min-width:1000px) {
+    }
+}
+
+.logo_chrisaz img {
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+

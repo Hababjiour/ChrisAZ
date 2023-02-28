@@ -1,0 +1,202 @@
+html{
+    font-family:'Montserrat-regular';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: $backcolor2;
+}
+
+main{
+    width: 100%;
+    align-self: center;
+    background-color: $backcolor1;
+}
+
+//Section
+div.content{
+    background-color: $backcolor1;
+}
+
+.is-layout-flex{
+    margin-bottom: 0;
+}
+
+
+.is-layout-flow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer{
+    padding: 0 10px;
+    width: 94%;
+    @media screen and (max-width:400px) {
+        padding-left: 20px;
+    }
+    @media screen and (min-width:1000px) {
+        min-height: 450px;
+
+    }
+
+}
+
+.textContainer a, .textContainer a:active, .textContainer a:visited{
+    color: $backcolor2;
+}
+
+.textContainer a:hover{
+    color: $mygreen;
+}
+
+.textContainerOdd>div:nth-child(odd){
+    background-color: $backcolor1;
+    box-shadow: 0 -4px 8px $odddarken, 0 4px 8px $odddarken;
+    border-radius: 2px;
+    @media screen and (min-width:1000px) {
+        padding: 0 10px;
+    }
+}
+
+.is-layout-flow h2{
+    background-color: $backcolor2;
+    width: 100%;
+    text-align: center;
+    font-family: 'Kalam';
+    color: $mygreen;
+    padding: 8px 0;
+}
+
+.is-layout-flex:nth-child(even) .is-layout-flow h2{
+    box-shadow: 0 8px 8px $odddarken2;
+}
+
+.is-layout-flow h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Kalam';
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.is-layout-flow p{
+    align-self: flex-start;
+    letter-spacing: 0.4px;
+    margin-bottom: 5px;
+    max-width: 500px;
+    line-height: 20px;
+}
+
+
+//Les listes
+.is-layout-flow p, .is-layout-flow ul{
+    padding: 5px 0;
+}
+
+.is-layout-flow ul{
+    align-self: flex-start;
+    margin-left: 24px;
+    margin: 20px 0 20px 24px;
+}
+
+.is-layout-flow ul li{
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 4px;
+    max-width: 468px;
+    line-height: 20px;
+    
+}
+
+//Div images + titre
+.divCreations{
+    @media screen and (min-width:1000px) {
+        margin-bottom: 20px;
+    }
+}
+
+.h2Creations{
+    margin-bottom: 20px!important;
+    align-self: center;
+    width: 100%;
+
+}
+
+//Conteneur pour changer le flex quand plus grand que smartphone
+.creationsContainer{
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-bottom: 30px!important;
+        row-gap: 10px;
+    }
+
+    @media screen and (min-width:700px) and (max-width:999px) {
+        width: calc(50% - 20px);
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+
+.creationsContainer>div{
+    margin-bottom: 0;
+    padding: 20px 40px;
+    @media screen and (min-width:1000px) {
+        width: calc(33.33% - 20px);
+    }
+
+    @media screen and (min-width:700px) and (max-width:999px) {
+        width: calc(50% - 20px);
+    }
+    
+}
+
+.creationsContainer>div:nth-child(even){
+    background-color: $backcolor1Darken;
+    box-shadow: 0 -4px 8px $odddarken, 0 4px 8px $odddarken;
+    
+    @media screen and (min-width:700px) and (max-width:999px) {
+        box-shadow: none;
+        background-color: $backcolor1;
+        width: calc(50% - 20px);
+    }
+
+    @media screen and (min-width:1000px) {
+        box-shadow: none;
+        border-radius: 1px;
+    }
+
+}
+
+//Gérer les background des images lorsque deux par colonne
+@media screen and (min-width:700px) and (max-width:999px) {
+    
+    .creationsContainer>div:nth-child(4n+0), .creationsContainer>div:nth-child(4n+1) {
+        background-color: $backcolor1Darken;
+        box-shadow: none;
+    }
+
+}
+
+.creationsContainer>div .wp-block-image{
+    padding: 20px;
+}
+
+
+//Last space of pages
+.lastSpace{
+    box-shadow: none!important;
+    background-color: transparent!important;
+
+}
+
+//Les séparateurs
+.wp-block-separator{
+    width: 60%;
+}

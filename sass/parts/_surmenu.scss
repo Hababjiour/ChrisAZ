@@ -1,0 +1,56 @@
+div#surmenu {
+
+    display: none;
+
+    @media screen and (min-width:1000px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: $backcolor2;
+        font-size: 0.8rem;
+        font-weight: bold;
+
+    }
+}
+
+#surmenu>div {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#surmenu>div a {
+    height: 30px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+#surmenu>div a p{
+    color: $backcolor1;
+    padding-left: 10px;
+}
+
+#surmenu>div a p:hover{
+    color: $mygreen;
+}
+
+#surmenu>div a:hover{
+    color: $mygreen;
+}
+
+#surmenu svg{
+    width: 15px;
+    height: 15px;
+    fill: $mygreen;
+}
+
