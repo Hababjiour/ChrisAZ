@@ -81,7 +81,36 @@ div.maxWidth {
     background-color: $backcolor1;
     height: 100px!important;
     border-radius: 4px;
+
+    visibility: hidden;   
+    opacity: 0; 
+
+    transition: all ease 0.2s;
+
 }
+
+    .sub-menu li{
+        justify-content: center!important;
+    }
+
+    .sub-menu li:first-child{
+        border-radius: 4px 4px 0 0;
+    }
+
+    .sub-menu li:last-child{
+        border-radius: 0 0 4px 4px;
+    }
+
+    .sub-menu li:hover{
+        background-color: $mygreen;
+    }
+
+    .sub-menu li a{
+        padding-right: 0!important;
+        color: $backcolor2!important;
+        font-weight: bold;
+    }
+
 
     /*Ajouter le triangle de la bulle sur le premier enfant de la liste*/
     .sub-menu li:first-child.special:after{
@@ -106,27 +135,6 @@ div.maxWidth {
         transform: translateX(-50%);
         }
 
-    .sub-menu li{
-        justify-content: center!important;
-    }
-
-    .sub-menu li:first-child{
-        border-radius: 4px 4px 0 0;
-    }
-
-    .sub-menu li:last-child{
-        border-radius: 0 0 4px 4px;
-    }
-
-    .sub-menu li:hover{
-        background-color: $mygreen;
-    }
-
-    .sub-menu li a{
-        padding-right: 0!important;
-        color: $backcolor2!important;
-        font-weight: bold;
-    }
 /*Fin du sous menu*/
 
 
