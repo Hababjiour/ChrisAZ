@@ -48,6 +48,7 @@ div.maxWidth {
         max-width: 150px;
         height: 100%;
         font-family: 'Kalam';
+        position: relative;
     }
     
     @media screen and (min-width:1200px) {
@@ -67,6 +68,67 @@ div.maxWidth {
         }
     }
 }
+
+
+/***Le sous menu****/
+.sub-menu{
+    position: absolute;
+    bottom: -125%;
+    left: 22%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column!important;
+    background-color: $backcolor1;
+    height: 100px!important;
+    border-radius: 4px;
+}
+
+    /*Ajouter le triangle de la bulle sur le premier enfant de la liste*/
+    .sub-menu li:first-child.special:after{
+        content:""; 
+        border-left:14px solid transparent;
+        border-right:14px solid transparent;
+        border-bottom: 14px solid $mygreen;
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+    /*Permettre au triangle de changer de couleur quand hover sur le premier li*/
+        .sub-menu li:first-child:after{
+        content:""; 
+        border-left:14px solid transparent;
+        border-right:14px solid transparent;
+        border-bottom: 14px solid $backcolor1;
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+
+    .sub-menu li{
+        justify-content: center!important;
+    }
+
+    .sub-menu li:first-child{
+        border-radius: 4px 4px 0 0;
+    }
+
+    .sub-menu li:last-child{
+        border-radius: 0 0 4px 4px;
+    }
+
+    .sub-menu li:hover{
+        background-color: $mygreen;
+    }
+
+    .sub-menu li a{
+        padding-right: 0!important;
+        color: $backcolor2!important;
+        font-weight: bold;
+    }
+/*Fin du sous menu*/
+
 
 #hamburger-button {
     cursor: pointer;
