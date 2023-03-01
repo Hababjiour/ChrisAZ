@@ -64,6 +64,13 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('special');
     });
 
+    //
+    $('#menu-item-361').append(function(){
+
+        return "<div style=\"position:absolute;width:9px;height:9px;top:calc(50% - 8px);transform:translateY(-50%);right:0px;\"><svg id=\"Calque_2\" data-name=\"Calque 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40.98 35.49\"><polygon class=\"cls-1\" points=\"20.49 35.49 10.24 17.75 0 0 20.49 0 40.98 0 30.73 17.75 20.49 35.49\"/></svg></div>";
+
+    });
+
     /*Animation du sub menu*/
     $('#menu-item-361').mouseenter(function(){
         $('.sub-menu').css({

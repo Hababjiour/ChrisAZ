@@ -148,7 +148,7 @@ div.content {
   color: black;
 }
 
-.textContainer a:hover {
+.textContainer p > a:hover {
   color: #3cc319;
 }
 
