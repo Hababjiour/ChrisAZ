@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
 
+    const mygreen = '#3cc319';
 
     // menu hamburger
     var content = $('#hamburger-content');
@@ -54,6 +55,7 @@ jQuery(document).ready(function ($) {
     });
 
 
+    //Submenu
     //Change color of the submenu's triangle when hover
     $('.sub-menu li:first-child').mouseenter(function(){
         $(this).toggleClass('special');
@@ -62,8 +64,27 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('special');
     });
 
-
-
+    /*Animation du sub menu*/
+    $('#menu-item-361').mouseenter(function(){
+        $('.sub-menu').css({
+            'visibility':'visible',
+            'opacity':'1'
+        })
+        $('#menu-item-361 a').css({
+            'color':mygreen
+        })
+    });
+    
+    $('#menu-item-361').mouseleave(function(){
+        $('.sub-menu').css({
+            'visibility':'hidden',
+            'opacity':'0'
+        })
+        $('#menu-item-361 a').css({
+            'color':'white'
+        })
+    });
+    /*Fin de l'animation du sub menu*/
 
 });
 
