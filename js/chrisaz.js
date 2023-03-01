@@ -54,6 +54,16 @@ jQuery(document).ready(function ($) {
     });
 
 
+    //Change color of the submenu's triangle when hover
+    $('.sub-menu li:first-child').mouseenter(function(){
+        $(this).toggleClass('special');
+    });
+    $('.sub-menu li:first-child').mouseleave(function(){
+        $(this).toggleClass('special');
+    });
+
+
+
 
 });
 

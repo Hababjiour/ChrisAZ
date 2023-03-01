@@ -12,7 +12,7 @@ get_header();
         <div class="templateHeader">
             <div class="frontpageTitre">
                 <h1><?php the_title() ?></h1>
-                <h2>ChrisAZ</h2>
+                <h2>A propos</h2>
             </div>
             <div class="AproposSvg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235.85 182.58">
