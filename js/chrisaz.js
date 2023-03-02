@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
     //
     $('#menu-item-361').append(function(){
 
-        return "<div style=\"position:absolute;width:9px;height:9px;top:calc(50% - 8px);transform:translateY(-50%);right:0px;\"><svg id=\"Calque_2\" data-name=\"Calque 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40.98 35.49\"><polygon class=\"cls-1\" points=\"20.49 35.49 10.24 17.75 0 0 20.49 0 40.98 0 30.73 17.75 20.49 35.49\"/></svg></div>";
+        return "<div style=\"position:absolute;width:9px;height:9px;top:calc(50% - 8px);transform:translateY(-50%);right:0px;\"><svg id=\"Calque_2\" data-name=\"Calque 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40.98 35.49\"><polygon class=\"cls-2\" points=\"20.49 35.49 10.24 17.75 0 0 20.49 0 40.98 0 30.73 17.75 20.49 35.49\"/></svg></div>";
 
     });
 
@@ -92,6 +92,19 @@ jQuery(document).ready(function ($) {
         })
     });
     /*Fin de l'animation du sub menu*/
+
+    //Session home.php
+    //Hover sur les articles pour changer le titre
+    $('.articleContainer a').mouseenter(function(){
+        $(this).css({
+            "box-shadow":"0 0 10px black"
+        })
+    });
+    $('.articleContainer a').mouseleave(function(){
+        $(this).css({
+            "box-shadow":"0 0 10px #6b6b6b"
+        })
+    });
 
 });
 
