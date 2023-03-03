@@ -64,12 +64,16 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('special');
     });
 
-    //
-    $('#menu-item-361').append(function(){
-
-        return "<div style=\"position:absolute;width:9px;height:9px;top:calc(50% - 8px);transform:translateY(-50%);right:0px;\"><svg id=\"Calque_2\" data-name=\"Calque 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40.98 35.49\"><polygon class=\"cls-2\" points=\"20.49 35.49 10.24 17.75 0 0 20.49 0 40.98 0 30.73 17.75 20.49 35.49\"/></svg></div>";
-
+    //Menu laptop *********/
+    $('#menu-item-361>a').html(function(){
+        return "<p>A propos</p><div style=\"width:10px;margin-left:10px;\"><svg id=\"Calque_2\" data-name=\"Calque 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40.98 35.49\"><polygon class=\"cls-2\" points=\"20.49 35.49 10.24 17.75 0 0 20.49 0 40.98 0 30.73 17.75 20.49 35.49\"/></svg></div>";
     });
+
+    $('#menu-item-361>a').css({
+        "display":"flex"
+    })
+
+  
 
     /*Animation du sub menu*/
     $('#menu-item-361').mouseenter(function(){
@@ -93,8 +97,15 @@ jQuery(document).ready(function ($) {
     });
     /*Fin de l'animation du sub menu*/
 
+    //Toggle pour submenu smartphone
+    $('#hamburger-sidebar .menu-item-361').click(function(){
+        $('#hamburger-sidebar .menu-item-361 ul').toggle(   );
+    });
+    //Fin du submenu
+
+
     //Session home.php
-    //Hover sur les articles pour changer le titre
+    //Hover sur les articles 
     $('.articleContainer a').mouseenter(function(){
         $(this).css({
             "box-shadow":"0 0 10px black"
